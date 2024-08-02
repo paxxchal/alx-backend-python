@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 
-sum_mixed_list = __import__('6-sum_mixed_list').sum_mixed_list
+zoom_array =  __import__('102-type_checking').zoom_array
 
-print(sum_mixed_list.__annotations__)
-mixed = [5, 4, 3.14, 666, 0.99]
-ans = sum_mixed_list(mixed)
-print(ans == sum(mixed))
-print("sum_mixed_list(mixed) returns {} which is a {}".format(ans, type(ans)))
+print(zoom_array.__annotations__)
