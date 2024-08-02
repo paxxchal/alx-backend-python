@@ -1,5 +1,9 @@
 #!/usr/bin/env python3
-add = __import__('0-add').add
 
-print(add(1.11, 2.22) == 1.11 + 2.22)
-print(add.__annotations__)
+sum_mixed_list = __import__('6-sum_mixed_list').sum_mixed_list
+
+print(sum_mixed_list.__annotations__)
+mixed = [5, 4, 3.14, 666, 0.99]
+ans = sum_mixed_list(mixed)
+print(ans == sum(mixed))
+print("sum_mixed_list(mixed) returns {} which is a {}".format(ans, type(ans)))
